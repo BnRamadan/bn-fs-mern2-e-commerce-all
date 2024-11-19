@@ -1,0 +1,80 @@
+/* ! 🔥 💪🏻 Bn Ramadan fullstack MERN project 2 ( E-commerce fullstack app ) */
+/* ! " The end of this project is the completing of future successes and creativity , Just strive, be patient, commit and keep going. " */
+/* ! 🔥 💪🏻 Always forward ! 💪🏻 🔥 */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 60px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.navbar:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.02);
+}
+
+.nav-profile {
+  width: 75px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-profile:hover {
+  transform: translateY(-2px);
+  border-color: #6079ff;
+  box-shadow: 0 4px 12px rgba(96, 121, 255, 0.2);
+}
+
+.navbar-scrolled {
+  padding: 10px 60px;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media(max-width: 800px) {
+  .navbar {
+    padding: 12px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  .nav-logo {
+    width: 150px;
+  }
+
+  .nav-profile {
+    width: 60px;
+    border-width: 1.5px;
+  }
+
+  .navbar-scrolled {
+    padding: 8px 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .navbar,
+  .nav-logo,
+  .nav-profile {
+    transition: none;
+  }
+}

@@ -1,0 +1,205 @@
+/* ! 🔥 💪🏻 Bn Ramadan fullstack MERN project 2 ( E-commerce fullstack app ) */
+/* ! " The end of this project is the completing of future successes and creativity , Just strive, be patient, commit and keep going. " */
+/* ! 🔥 💪🏻 Always forward ! 💪🏻 🔥 */
+.list-product {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 50px;
+  margin: 30px;
+  border-radius: 16px;
+  background: white;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.list-product::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #e0d3d3, #d4c4c4, #e0d3d3);
+  opacity: 0.8;
+}
+
+.listproduct-format-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 15px;
+  width: 100%;
+  padding: 25px 0;
+  color: #454545;
+  font-size: 15px;
+  font-weight: 600;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid #f5f5f5;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+}
+
+.listproduct-format-main>* {
+  transition: all 0.3s ease;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.listproduct-format-main>*:hover {
+  background: #f8f8f8;
+  transform: translateY(-2px);
+}
+
+.list-product-icon {
+  height: 70px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.list-product-icon:hover {
+  transform: scale(1.05);
+}
+
+.list-product-remove {
+  cursor: pointer;
+  margin: auto;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #fff;
+  border: 1px solid #e0e0e0;
+}
+
+.list-product-remove:hover {
+  background: #fff5f5;
+  border-color: #ffd5d5;
+  transform: rotate(90deg);
+  box-shadow: 0 2px 8px rgba(255, 100, 100, 0.15);
+}
+
+.listproduct-allproducts {
+  width: 100%;
+  overflow-y: auto;
+  padding: 20px 0;
+  scrollbar-width: thin;
+  scrollbar-color: #d4c4c4 #f5f5f5;
+}
+
+.listproduct-allproducts::-webkit-scrollbar {
+  width: 8px;
+}
+
+.listproduct-allproducts::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.listproduct-allproducts::-webkit-scrollbar-thumb {
+  background: #d4c4c4;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.listproduct-allproducts::-webkit-scrollbar-thumb:hover {
+  background: #c8b6b6;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.listproduct-allproducts>* {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+@media(max-width:800px) {
+  .list-product {
+    box-sizing: border-box;
+    width: 95%;
+    height: 100%;
+    padding: 15px 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+  }
+
+  .listproduct-format-main {
+    padding: 15px 0;
+    color: #454545;
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  .list-product-remove {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    margin: 0 auto;
+  }
+
+  .list-product-icon {
+    height: 55px;
+    min-width: 55px;
+    object-fit: cover;
+  }
+}
+
+@media(max-width:500px) {
+  .list-product {
+    padding: 10px 15px;
+  }
+
+  .listproduct-format-main {
+    gap: 5px;
+    font-size: 11px;
+  }
+
+  .list-product-remove {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    min-height: 28px;
+  }
+
+  .list-product-icon {
+    height: 50px;
+    min-width: 50px;
+  }
+
+  .listproduct-format-main {
+    grid-template-columns: 0.8fr 1fr 0.8fr 0.8fr 0.8fr 0.5fr;
+  }
+}
+
+.list-product-remove {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 5;
+  position: relative;
+}

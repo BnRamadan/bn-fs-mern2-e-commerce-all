@@ -1,0 +1,61 @@
+/* ! 🔥 💪🏻 Bn Ramadan fullstack MERN project 2 ( E-commerce fullstack app ) */
+/* ! " The end of this project is the completing of future successes and creativity , Just strive, be patient, commit and keep going. " */
+/* ! 🔥 💪🏻 Always forward ! 💪🏻 🔥 */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  gap: 20px;
+  width: 100%;
+  max-width: 250px;
+  height: 100vh;
+  background: white;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: #f6f6f6;
+  gap: 20px;
+  cursor: pointer;
+    transition: all 0.2s ease-in-out;
+      border: 1px solid transparent;
+}
+
+.sidebar-item {
+  transition: all 0.2s ease-in-out;
+  border: 1px solid transparent;
+}
+
+.sidebar-item:hover {
+  background: #ffffff;
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaeaea;
+}
+
+.sidebar-item:active {
+  transform: scale(0.98);
+}
+
+@media(max-width: 800px) {
+  .sidebar {
+    padding: 30px 0;
+    flex-direction: row;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    justify-content: center;
+  }
+
+  .sidebar-item {
+    margin: 0;
+  }
+}

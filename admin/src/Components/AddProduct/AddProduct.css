@@ -1,0 +1,118 @@
+/* ! 🔥 💪🏻 Bn Ramadan fullstack MERN project 2 ( E-commerce fullstack app ) */
+/* ! " The end of this project is the completing of future successes and creativity , Just strive, be patient, commit and keep going. " */
+/* ! 🔥 💪🏻 Always forward ! 💪🏻 🔥 */
+.addproduct {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  padding: 30px 50px;
+  margin: 20px 30px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.addproduct:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.addproduct-itemfield {
+  width: 100%;
+  color: #7b7b7b;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.addproduct-itemfield input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  padding-left: 15px;
+  border: 2px solid #e0e0e0;
+  outline: none;
+  color: #7b7b7b;
+  font-family: 'Poppins';
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.addproduct-itemfield input:focus {
+  border-color: #6079ff;
+  box-shadow: 0 0 0 3px rgba(96, 121, 255, 0.1);
+}
+
+.addproduct-price {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.addproduct-selector {
+  padding: 10px;
+  width: 100px;
+  height: 50px;
+  font-size: 14px;
+  color: #7b7b7b;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.addproduct-selector:hover {
+  border-color: #6079ff;
+  background-color: #f8f9ff;
+}
+
+.addproduct-thumnail-img {
+  height: 120px;
+  width: 120px;
+  border-radius: 12px;
+  object-fit: contain;
+  margin: 10px 0px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.addproduct-thumnail-img:hover {
+  transform: scale(1.05);
+  border-color: #6079ff;
+}
+
+.addproduct-btn {
+  margin-top: 20px;
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  background: #6079ff;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(96, 121, 255, 0.2);
+}
+
+.addproduct-btn:hover {
+  background: #4c63e6;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(96, 121, 255, 0.3);
+}
+
+.addproduct-btn:active {
+  transform: translateY(0);
+}
+
+@media(max-width: 800px) {
+  .addproduct {
+    width: auto;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+  }
+}
