@@ -88,9 +88,9 @@ The **E-Commerce Store** is an innovative web application developed using the **
 
 Watch a full demonstration of each part from project :
 
- 1- Home page : [**Home page demo video**]([https://github.com/BnRamadan/bn-fs-mern-1-ecommerce-store/issues/1](https://github.com/BnRamadan/bn-fs-mern2-e-commerce-all/issues/1)).
+ 1- Home page : [**Home page demo video**] ([https://github.com/BnRamadan/bn-fs-mern-1-ecommerce-store/issues/1](https://github.com/BnRamadan/bn-fs-mern2-e-commerce-all/issues/1)
 
- 2- Admin page : [**Admin page demo video**]([https://github.com/BnRamadan/bn-fs-mern-1-ecommerce-store/issues/1](https://github.com/BnRamadan/bn-fs-mern2-e-commerce-all/issues/2)).
+ 2- Admin page : [**Admin page demo video**] ([https://github.com/BnRamadan/bn-fs-mern-1-ecommerce-store/issues/1](https://github.com/BnRamadan/bn-fs-mern2-e-commerce-all/issues/2)
 
 
 
